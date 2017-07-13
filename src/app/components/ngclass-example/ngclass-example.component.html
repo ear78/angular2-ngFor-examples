@@ -1,0 +1,10 @@
+<div appCardHover>
+  <h4 >This is the NgClass example</h4>
+  <button class="btn btn-primary" (click)="onChangePara()">
+    Change Class
+  </button>
+  <p class="standard" [ngClass]="{'change': isToggle}">
+    ngclass-example works!
+  </p>
+  <p [style.display]="'none'" class="directive-test">This will show after hover!</p>
+</div>

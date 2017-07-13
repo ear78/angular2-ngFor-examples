@@ -1,0 +1,12 @@
+<h4>This is the Group example</h4>
+<ul>
+  <li *ngFor="let group of peopleByCountry">
+    {{ group.country }}
+
+    <ul>
+      <li *ngFor="let person of group.people">
+        {{ person.name }}
+      </li>
+    </ul>
+  </li>
+</ul>
