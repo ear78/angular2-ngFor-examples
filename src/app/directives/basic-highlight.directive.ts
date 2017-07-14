@@ -4,8 +4,8 @@ import { Directive, ElementRef, Renderer2, OnInit, HostListener, HostBinding } f
   selector: '[appBasicHighlight]'
 })
 export class BasicHighlightDirective implements OnInit {
-  // @HostBinding('style.color') color: string;
-  // @HostBinding('style.transition') transition: string;
+  @HostBinding('style.color') color: string;
+  @HostBinding('style.transition') transition: string;
 
   constructor(private el: ElementRef, private renderer: Renderer2) {  }
 
@@ -14,15 +14,15 @@ export class BasicHighlightDirective implements OnInit {
   }
 
   @HostListener('mouseover') onMouseOver(){
-    let dirEl = this.el.nativeElement.getElementById('demo');
-    // this.transition = 'all .5s ease';
-    // this.color = 'red';
+    // let dirEl = this.el.nativeElement.getElementById('demo');
+    this.transition = 'all .5s ease';
+    this.color = 'red';
   }
 
-  // @HostListener('mouseleave') onMouseOut(){
-  //   this.transition = 'all .5s ease';
-  //   this.color = '#fff';
-  // }
+  @HostListener('mouseleave') onMouseOut(){
+    this.transition = 'all .5s ease';
+    this.color = '#fff';
+  }
 
 
 }
