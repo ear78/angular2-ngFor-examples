@@ -8,6 +8,7 @@ import { NgifExampleComponent } from './components/ngif-example/ngif-example.com
 import { NgswitchExampleComponent } from './components/ngswitch-example/ngswitch-example.component';
 import { NgclassExampleComponent } from './components/ngclass-example/ngclass-example.component';
 import { CardHoverDirective } from './directives/card-hover.directive';
+import { BasicHighlightDirective } from './directives/basic-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CardHoverDirective } from './directives/card-hover.directive';
     NgifExampleComponent,
     NgswitchExampleComponent,
     NgclassExampleComponent,
-    CardHoverDirective
+    CardHoverDirective,
+    BasicHighlightDirective
   ],
   imports: [
     BrowserModule

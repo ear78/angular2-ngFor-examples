@@ -1,3 +1,4 @@
+<!-- Showing a hover directive being used appCardHover -->
 <div appCardHover>
   <h4 >This is the NgClass example</h4>
   <button class="btn btn-primary" (click)="onChangePara()">
@@ -7,4 +8,11 @@
     ngclass-example works!
   </p>
   <p [style.display]="'none'" class="directive-test">This will show after hover!</p>
+</div>
+
+<div class="well bottom" >
+  <button class="btn btn-primary" appBasicHighlight>
+    Toggle para
+  </button>
+  <p id="demo">This is another directive @hostbinding example of showing and hiding</p>
 </div>

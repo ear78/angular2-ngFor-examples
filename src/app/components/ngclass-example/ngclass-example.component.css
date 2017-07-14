@@ -6,3 +6,7 @@
   color: tomato;
   transform: translate3d(100px,0,0);
 }
+
+.bottom {
+  margin-bottom: 40px;
+}

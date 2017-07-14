@@ -12,10 +12,13 @@ export class CardHoverDirective {
   }
 
   @HostListener('mouseover') onMouseOver(){
-        // let backEl = this.el.nativeElement.querySelector('.directive-test');
-    // this.renderer.setElementStyle(backEl, 'display', 'block');
     let dirEl = this.el.nativeElement.querySelector('.directive-test');
     this.renderer.setElementStyle(dirEl, 'display', 'block');
+  }
+
+  @HostListener('mouseout') onMouseOverOut(){
+    let dirEl = this.el.nativeElement.querySelector('.directive-test');
+    this.renderer.setElementStyle(dirEl, 'display', 'none');
   }
 
 }
